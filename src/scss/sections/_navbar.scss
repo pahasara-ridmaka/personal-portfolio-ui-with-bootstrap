@@ -1,0 +1,33 @@
+@import "../components/fonts";
+@import "../components/mixin";
+
+nav {
+  @include media-breakpoint-up(lg) {
+    margin-top: 3rem;
+  }
+  .menu {
+    //   margin: 0 auto;
+
+    ul {
+      @include media-breakpoint-down(lg) {
+        align-items: center;
+      }
+      margin: 0 auto;
+      li {
+        margin: 0 0.5rem;
+
+        a {
+          &:hover {
+            color: $teal-300;
+          }
+        }
+
+        p {
+          @include media-breakpoint-down(lg) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
