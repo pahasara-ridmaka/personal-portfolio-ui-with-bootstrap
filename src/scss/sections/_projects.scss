@@ -1,0 +1,44 @@
+#projects-section {
+  padding-top: 12rem;
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+
+  .container {
+    .project-box {
+      width: 60%;
+      &:hover {
+        background: $secondary;
+      }
+    }
+
+    .row {
+      .date-section {
+        @include media-breakpoint-down(md) {
+          text-align: center;
+        }
+        font-style: italic;
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+      }
+
+      .info-section {
+        .title-container {
+          .title {
+            font-weight: 300;
+            font-size: 1.5rem;
+            margin-bottom: 0.6rem;
+          }
+        }
+        .desc {
+          @include media-breakpoint-down(md) {
+            text-align: justify;
+          }
+          font-family: "Poppins", sans-serif;
+          font-size: 0.8rem;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}

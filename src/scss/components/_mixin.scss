@@ -4,14 +4,3 @@
   background: -o-linear-gradient($direction, $list);
   background: linear-gradient($direction, $list);
 }
-
-@mixin responsive-gap($breakpoint) {
-  $multiplier: 1;
-  @if $breakpoint == sm {
-    $multiplier: 5;
-  } @else if $breakpoint == md {
-    $multiplier: 8;
-  } @else if $breakpoint == lg {
-    $multiplier: 9;
-  }
-}

@@ -5,6 +5,16 @@ nav {
   @include media-breakpoint-up(lg) {
     margin-top: 3rem;
   }
+
+  .container-fluid {
+    .navbar-toggler {
+      width: 100%;
+      span {
+        // width: 100%;
+      }
+    }
+  }
+
   .menu {
     //   margin: 0 auto;
 

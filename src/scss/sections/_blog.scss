@@ -1,0 +1,29 @@
+#blog-section {
+  padding-top: 12rem;
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+
+  .container {
+    .row {
+      .article-box {
+        margin-bottom: 2rem;
+        .thumbnail {
+        }
+        .title {
+          font-weight: 300;
+          font-family: "Poppins", sans-serif;
+        }
+        .description {
+          font-size: 0.8rem;
+          font-weight: 100;
+          font-family: "Poppins", sans-serif;
+        }
+        button {
+          width: 100%;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
