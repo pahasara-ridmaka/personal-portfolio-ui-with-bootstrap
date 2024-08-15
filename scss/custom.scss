@@ -1,0 +1,39 @@
+@import "./components/mixin";
+
+// PRIMARY COLORS
+
+$primary: #0f172a;
+$secondary: #0d2e7c;
+
+// TEAL COLOR
+
+$teal-300: #5eead4;
+
+//COLOR LIST
+$primary-transparent-0: rgba(15, 23, 42, 0);
+$primary-transparent-5: rgba(15, 23, 42, 0.5);
+$primary-transparent-10: rgba(15, 23, 42, 1);
+$avatar-shadow-list: $primary-transparent-0 0%, $primary-transparent-5 40%,
+  $primary-transparent-10 100%;
+
+// SPACING
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 9,
+);
+
+// IMPORT BOOTSTRAP
+@import "~bootstrap/scss/bootstrap";
+@import "./sections/navbar";
+@import "./sections/header";
+@import "./components/mixin";
+@import "./sections/background";
+@import "./sections/about";
+@import "./sections/projects";
+@import "./sections/blog";
+@import "./sections/footer";
